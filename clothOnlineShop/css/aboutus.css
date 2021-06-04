@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.aboutus__container{
+	font-size: 62.5%;
+	font-family: sans-serif;
+	display: grid;
+	grid-template-columns: minmax(300px, 1fr) repeat(6, minmax(min-content, 1fr)) 1fr;
+	grid-template-rows: 10vh 60vh 70vh 20vh;
+
+
+}
+
+.aboutus__head{
+	grid-row: 2 / span 1;
+	grid-column: 1 / -1;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../dev_img/forabout.jpg);
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.aboutus__title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.heading--1{
+	font-size: 2.5rem;
+	color: #e3dcdc;
+	letter-spacing: .2px;
+	border-bottom: 3px solid #d87218;
+	text-align: center;
+	margin: 2rem auto;
+	padding: 0 auto;
+
+}
+.text{
+	font-size: 1.3rem;
+	margin: 1rem auto;
+	color: #fff;
+	width: 50vw;
+	letter-spacing: 4px;
+}
+
+.text > span {
+	/*margin: 0 .5rem;*/
+	font-size: 1.5rem;
+}
+
+.dark {
+	color: #3c3939;
+	margin-bottom: 5rem;
+}
+
+
+.section__teams{
+	grid-row: 3/span 1;
+	grid-column: 1/ -1;
+	
+}
+
+
+.aboutus__member{
+	display: flex;
+	justify-content: space-around;
+	/*flex-wrap: wrap;*/
+	margin-bottom: 7rem;
+}
+
+.aboutus__member figure:first-child{
+	margin-left: 5rem;
+}
+
+.aboutus__member > figure{
+	width: 80%;
+	height: 80%;
+
+}
+
+.aboutus__member--img{
+	width:80%;
+	height: 80%;
+	border-radius: 50%;
+	border: 2px solid black;
+
+}
+
+
+figure > h3 , .post{
+	text-align: center;
+	margin-left: -3rem;
+	margin-top: 1rem;
+}
+
+figure h3 {
+	font-size: 2rem;
+	letter-spacing: .2px;
+	color: #3c3939;
+}
+
+
+figure p {
+	font-size: 1.5rem;
+	color: blue;
+}
+
+
+
+

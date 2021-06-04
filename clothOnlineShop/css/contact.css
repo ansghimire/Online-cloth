@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*to delete the setting of bootstrp*/
+p{
+	margin-bottom: 0;
+}
+
+
+.contact{
+	font-size: 62.5%;
+	font-family: sans-serif;
+	display: grid;
+	grid-template-columns: minmax(300px, 1fr) repeat(6, minmax(min-content, 1fr)) 1fr;
+	grid-template-rows: 10vh  min-content  minmax(100vh, min-content) min-content;
+
+}
+
+.section__contact--heading{
+	grid-column: 1 /-1;
+    grid-row: 2 / span 1;
+   /* background: linear-gradient(to right, black, lightblue);*/
+    background: url(../dev_img/3955.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.5rem;
+}
+
+.contact__heading{
+	margin-top: 2rem;
+	color: #fff;
+	font-size: 2.5rem;
+	letter-spacing: .2px;
+}
+
+
+.contact__paragraph{
+	color: #fff;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	width: 50vw;
+	/*letter-spacing: .2spx;*/
+}
+
+.contact__paragraph span {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-btn{
+	margin-top: 2rem;
+	padding: .5rem 1rem;
+	font-size: 1.2rem;
+	border-outline: none;
+	border: 0;
+	background-color: #d87218;
+	color:#fff;
+}
+
+/*next section start*/
+.section__contact {
+	grid-row: 3 /span 1;
+	grid-column: 1/-1;
+	/*background-color: yellow;*/
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh ;
+}
+
+.contact__containers{
+	background-color: #fff;
+    grid-column: 2/ span 4;
+    grid-row: 2/-1;
+  /*  background-image: linear-gradient(105deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 50%, transparent 50%),url(../dev_img/3955.jpg);*/
+	/*background-size: 100%;*/
+	border-radius: 3px;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
+	background-color: #c0cecd; 
+	display: flex;
+}
+
+.contact__info{
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    height: 100%;
+    padding-left:  3rem;
+    width: 27vw;
+   clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    background: yellow;
+    opacity: .5;
+}
+
+.contact__form{
+	flex: 1;
+	display: flex;
+	text-align: center;
+	padding-left: 2rem;
+
+}
+
+
+.contact__form h1 {
+	text-align: center;
+	font-size: 2.2rem;
+	padding-right: 3rem;
+	font-weight: 300;
+	letter-spacing: .2px;
+	margin: 1rem 0;
+}
+
+.side-by-side{
+	display: flex;
+	justify-content: space-between;
+}
+
+.form_label input {
+	font-size: 1rem;
+	padding:.5rem 1rem;
+	margin: 1rem 0;
+
+}
+
+.sub input {
+	width: 100%;
+}
+
+.form_label textarea {
+	margin: .5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

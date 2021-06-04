@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.profile_containers{
+	font-size: 62.5%;
+	font-family: sans-serif;
+	display: grid;
+	grid-template-columns: minmax(300px, 1fr) repeat(6, minmax(min-content, 1fr)) 1fr;
+	grid-template-rows: 10vh minmax(90vh, min-content) min-content min-content;
+	overflow-x: hidden;
+
+}
+
+.section_profile{
+grid-row: 2 / span 2;
+grid-column: 1 / -1;
+z-index: 1000;
+}
+
+.user-profile{
+position: relative;
+}
+
+.upper-profile-bg{
+background-image: url('../dev_img/pattern.png');
+width: 100vw;
+height: 65vh;
+clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+
+}
+
+
+.user-profile-details{
+	width: 65vw;
+    height: 60vh;
+    background: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: 8rem;
+    left: 18vw;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+   
+}
+
+
+.img--user {
+ grid-column: 1 /span 2;
+ 
+ 
+}
+.img--user > * {
+	object-fit: 100%;
+    width: 100%;
+    height: 60vh;
+  
+
+}
+
+
+.user-bio {
+background: #26C281;
+clip-path: polygon(0% 0%, 0% 31%, 0% 99%, 100% 75%, 100% 0%);
+grid-column:  3 / -1;
+
+}
+
+.user-bio p {
+	margin: 1rem 1rem .5rem 1rem;
+	text-anchor: center;
+	font-size: 1rem;
+	font-family:sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.user-bio h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.user-bio h4{
+	font-size: 1.4rem;
+	text-align: center;
+	margin: 1rem 0rem;
+}
+
+.user-bio h2 {
+	margin-top: 2rem;
+	font-size: 1.5rem;
+}
+.user-bio h3 {
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 100;
+}
+
+
+
+
+
+/*section form*/
+.update__section {
+	background-image: url('../dev_img/pattern.png');
+	grid-row: 3 / span 1;
+	grid-column: 1 / -1;
+	z-index: 10000;
+}
+
+.user-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.heading-2{
+	font-size: 3rem;
+	font-weight: 200;
+	margin-bottom: 2rem;
+}
+
+.form-label{
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label  label {
+	font-size:  2rem;
+}
+
+.form-label input {
+	margin-bottom: 1rem;
+	font-size: 1.9rem;
+	padding: .5rem .5rem;
+}
+
+.btn {
+	margin: 1rem 0;
+	padding: 1rem 13rem;
+	background: green;
+	border: none;
+	cursor: pointer;
+}
+
+
+.log-btn {
+	padding: 0.6rem 0;
+	background: red;
+	border: none;
+	font-size: 1.2rem;
+}
+.log-btn a {
+	text-decoration: none;
+	padding: 1rem 13rem;
+	font-size: 1.2rem;
+	color: black;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

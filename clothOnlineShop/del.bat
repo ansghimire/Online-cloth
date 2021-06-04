@@ -1,0 +1,1 @@
+"C:\xampp\php\php.exe" -f C:\xampp\htdocs\clothOnlineShop\delete_row_automatic.php

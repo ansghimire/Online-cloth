@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+
+
+.containers{
+	font-size: 62.5%;
+	font-family: sans-serif;
+	display: grid;
+	grid-template-columns: minmax(300px, 1fr) repeat(6, minmax(min-content, 1fr)) 1fr;
+	grid-template-rows: 10vh 40vh minmax(90vh, min-content) min-content;
+
+
+}
+
+/*REUSABLE CODE*/
+
+.form_section{
+    grid-column: 1 / -1;
+    grid-row: 2/ span 2;
+	/*background-color: yellow;*/
+	display: flex;
+	justify-content: center;
+	align-content: center;
+    
+}
+
+.form {
+	
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: #fff;
+	margin-top: 2rem;
+	padding: 2rem 3rem;
+	background-color: #dbdbdb;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+	border-radius: 3px;
+
+}
+
+
+.form-label {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.form-label > * {
+	font-size: 1.4rem;
+
+}
+
+.form-label input {	
+	font-family: inherit;
+	padding-left: .2rem;
+	padding-right: 1rem;
+	width: 100%;
+	height: 5vh;
+
+
+	
+}
+
+
+.form-label input:focus{
+	outline-color: #d87218;
+}
+
+.btn {
+	align-self: stretch;
+	padding: .5rem 0;
+	background-color: #d87218;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+
+
+
+.btn:hover{
+	background: #e4a102;
+}
+
+
+
+
+
+.text {
+	margin-top: .2rem;
+	font-size: .9rem;
+}
+
+
+.mssg{
+	display: block;
+	color: red;
+	margin: .5rem 0rem;
+	font-size: 1rem;
+}
+
+
+/*shipping and place order reusable code*/
+.shipping__details {
+
+	display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    margin: 1rem auto;
+	
+}
+.shipping__details > div {
+ flex: 1 1;
+ border-top: 3px solid #c0c0c0;
+ font-size: 1.1rem;
+ color: #c4c5c6;
+
+}
+
+
+.shipping__details .active{
+	 color: orange;
+	 border-top: 3px solid orange;
+	
+} 
+
+
+/*use below to reset the bootstrap properties*/
+
+ul {
+	margin:0;
+	padding: 0;
+}
+p{
+	margin:0;
+}
